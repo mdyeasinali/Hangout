@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:background="@drawable/background_login"
     android:layout_height="match_parent"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
     android:fitsSystemWindows="true"
     tools:context="com.example.amin2.hangout.auth.LoginActivity">
 

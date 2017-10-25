@@ -33,7 +33,9 @@ public class LoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            Intent slideactivity = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(slideactivity);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             finish();
         }
 
@@ -57,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
         });
 
@@ -64,6 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
         });
 
@@ -104,6 +108,8 @@ public class LoginActivity extends AppCompatActivity {
                                 } else {
                                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                                     startActivity(intent);
+                                    overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
                                     finish();
                                 }
                             }

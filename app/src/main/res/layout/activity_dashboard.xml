@@ -25,22 +25,28 @@
             android:weightSum="3">
 
             <android.support.v7.widget.AppCompatImageButton
-                android:id="@+id/loginBt"
+                android:id="@+id/proBtn"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_login_black_24dp" />
 
             <android.support.v7.widget.AppCompatImageButton
-                android:id="@+id/signupBt"
+                android:id="@+id/signupBtn"
                 android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_signup_black_24dp" />
 
             <android.support.v7.widget.AppCompatImageButton
-                android:id="@+id/loginBt"
+                android:id="@+id/settingBtn"
                 android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_settings_applications_black_24dp" />
@@ -58,12 +64,16 @@
                 android:id="@+id/cameraBt"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_camera_black_24dp" />
 
             <android.support.v7.widget.AppCompatImageButton
                 android:id="@+id/homeBt"
                 android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_home_black_24dp" />
@@ -71,6 +81,8 @@
             <android.support.v7.widget.AppCompatImageButton
                 android:id="@+id/weatherBt"
                 android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_weather_black_24dp" />
@@ -89,6 +101,8 @@
                 android:id="@+id/GallaryBt"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_gallary_24dp" />
 
@@ -96,12 +110,16 @@
                 android:id="@+id/nearbyBt"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_nearby_on_black_24dp" />
 
             <android.support.v7.widget.AppCompatImageButton
                 android:id="@+id/exitBt"
                 android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@color/bg_login"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
@@ -114,6 +132,7 @@
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemBackground="@color/btn_login_bg"
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation" />

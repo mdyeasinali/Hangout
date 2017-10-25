@@ -61,7 +61,8 @@
             android:id="@+id/navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            app:itemBackground="@color/btn_login_bg"
+            android:layout_alignParentBottom="true"
             android:background="?android:attr/windowBackground"
             app:menu="@menu/navigation" />
 
