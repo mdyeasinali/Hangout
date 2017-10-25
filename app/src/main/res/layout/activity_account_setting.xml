@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textSize="45dp"
+        android:padding="22dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="100dp"
+
+        android:layout_gravity="center"
+        android:onClick="InsertImage"
+        android:padding="20dp"
+        android:layout_height="100dp"></ImageView>
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            android:id="@+id/etname"
+            android:padding="10dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            android:id="@+id/etEmail"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            android:hint="Password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            android:padding="10dp"
+            android:hint="confirm Password"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            android:padding="10dp"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnSignUp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="Sign Up"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/button_states"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@drawable/button_states"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:id="@+id/btnRegistered"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:text="Already registered"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+         />
+    <TextView
+        android:textColor="#C3250A"
+        android:id="@+id/tnsignup"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistered" />
+</LinearLayout>
